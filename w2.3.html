@@ -1,0 +1,123 @@
+<html>
+<head>
+	<title>Form</title>
+	<style>
+		h3 {
+			text-align: center;
+			color:red;
+			text-decoration: underline solid;
+		}
+
+		div {
+			margin-left: 50px;
+			margin-top: 50px;
+			width: max-content;
+			background-color: beige;
+			padding: 20px;
+			border-radius: 5px;
+			box-shadow: 4px 4px 2px black;
+		}
+
+		label {
+			color: black;
+			font-weight: bold;
+		}
+
+		input[type="text"],
+		input[type="email"],
+		input[type="tel"],
+		input[type="date"],
+		input[type="password"] {
+			border: none;
+			padding: 5px;
+			border-bottom: 2px solid crimson;
+		}
+
+		input[type="submit"] {
+			background-color: red;
+			color: white;
+		}
+	</style>
+
+<body>
+	<h3>REGISTRATION FORM</h3>
+	<div>
+		<form>
+			<fieldset>
+				<b>Personal details</b>
+				<table>
+					<tr>
+						<td>
+							<label>Name</label>
+						</td>
+						<td>
+							<input type="text" required placeholder="Enter your name">
+						</td>
+						<td>
+							<label>User Name</label>
+						</td>
+						<td>
+							<input type="text" required placeholder="Enter your username">
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<label>Email</label>
+						</td>
+						<td>
+							<input type="email" required placeholder="Enter your Email">
+						</td>
+						<td>
+							<label>Password</label>
+						</td>
+						<td>
+							<input type="password" required placeholder="Enter your password">
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<label>Phone Number</label>
+						</td>
+						<td>
+							<input type="tel" required placeholder="Enter your phone number">
+						</td>
+						<td>
+							<label>Date of birth</label>
+						</td>
+						<td>
+							<input type="date" required>
+						</td>
+					</tr>
+					<tr>
+						<td><label>Gender</label></td>
+						<td><input type="radio" name="gender" value="male">Male
+							<input type="radio" name="gender" value="female">Female
+						</td>
+						<td><label>State</label></td>
+						<td><select>
+								<option value="kerala">kerala</option>
+								<option value="tamilnadu">Tamil Nadu</option>
+								<option value="karnataka">Karnataka</option>
+								<option value="Mumbai">Mumbai</option>
+								<option value="goa">Goa</option>
+							</select></td>
+					</tr>
+					<tr>
+						<td><label>Languages</label></td>
+						<td><input type="checkbox" value="mal">Malayalam
+							<input type="checkbox" value="eng">English
+						<td><input type="checkbox" value="hin">Hindi</td>
+					</tr>
+					<tr>
+						<td><label>Address</label></td>
+						<td><textarea placeholder="Enter your address"></textarea></td>
+					</tr>
+					</table>
+					<input type="submit" value="SIGN IN"></td>
+					
+			</fieldset>
+		</form>
+	</div>
+</body>
+
+</html>
