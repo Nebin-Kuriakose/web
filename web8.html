@@ -1,0 +1,19 @@
+<html>
+<head>
+</head>
+<body>
+    <button id="myButton">Click Me!</button>
+
+    <script>
+        var button = document.getElementById('myButton');
+
+        button.addEventListener('click', function() {
+            alert('Event 1: Hello from the first event!');
+        });
+        button.addEventListener('click', function() {
+            button.textContent = 'Clicked!';
+        });
+    </script>
+</body>
+</html>
+

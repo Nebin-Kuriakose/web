@@ -1,0 +1,36 @@
+<html>
+<head>
+  <style>
+    body {
+      text-align: center;
+      padding: 50px;
+    }
+    img {
+      max-width:500px;
+      height:400px;
+    }
+    p {
+      font-size: 18px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Hover Over the Image to Change It</h1>
+  <img id="mainImage" src="C:\Users\NEBIN\OneDrive\Desktop\HTML\th.jpg" >
+  <p id="mainText">IM PETER PARKER</p>
+
+  <script>
+    function onHover() {
+      document.getElementById('mainImage').src ='th (2).jpg';
+      document.getElementById('mainText').textContent ='AKA SPIDER-MAN';
+    }
+    function onLeave() {
+      document.getElementById('mainImage').src = 'th.jpg';
+      document.getElementById('mainText').textContent = 'IM PETER PARKER';
+    }
+    var image = document.getElementById('mainImage');
+    image.addEventListener('mouseover', onHover);
+    image.addEventListener('mouseout', onLeave);
+  </script>
+</body>
+</html>

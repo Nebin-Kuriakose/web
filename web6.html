@@ -1,0 +1,63 @@
+<html>
+<head>
+    <title>String and Math Functions in JavaScript</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            line-height: 1.6;
+        }
+        h1 {
+            color: #2c3e50;
+        }
+        .output {
+            margin: 10px 0;
+            padding: 10px;
+            background-color: bisque;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>String and Math Object Functions</h1>
+
+    <h2>String Functions</h2>
+    <div class="output" id="string-output"></div>
+
+    <h2>Math Functions</h2>
+    <div class="output" id="math-output"></div>
+
+    <script>
+        const str = "Hello, JavaScript!";
+        document.getElementById("string-output").innerHTML = 
+            Original String: "${str}"<br>
+            Length: ${str.length}<br>
+            To Uppercase: ${str.toUpperCase()}<br>
+            To Lowercase: ${str.toLowerCase()}<br>
+            Substring (7, 17): ${str.substring(7, 17)}<br>
+            Index of 'Java': ${str.indexOf('Java')}<br>
+            Replace 'JavaScript' with 'World': ${str.replace('JavaScript', 'World')}<br>
+            Split by ',': ${str.split(',')}<br>
+            Character at Index 1: ${str.charAt(1)}<br>
+            Includes 'Script': ${str.includes('Script')}<br>
+            Trimmed String: "${"padded string".trim()}"
+        ;
+
+        
+        document.getElementById("math-output").innerHTML = 
+            PI: ${Math.PI}<br>
+            Absolute Value of -7: ${Math.abs(-7)}<br>
+            Square Root of 25: ${Math.sqrt(25)}<br>
+            Random Number (0 to 1): ${Math.random()}<br>
+            Random Number (1 to 100): ${Math.floor(Math.random() * 100) + 1}<br>
+            Ceiling of 4.3: ${Math.ceil(4.3)}<br>
+            Floor of 4.7: ${Math.floor(4.7)}<br>
+            Round 4.5: ${Math.round(4.5)}<br>
+            Power (2^5): ${Math.pow(2, 5)}<br>
+            Max of (5, 10, 15): ${Math.max(5, 10, 15)}<br>
+            Min of (5, 10, 15): ${Math.min(5, 10, 15)}
+        ;
+    </script>
+</body>
+</html>

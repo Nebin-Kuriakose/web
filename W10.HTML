@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hover to Change Content</title>
+  <style>
+    body {
+      text-align: center;
+      font-family: Arial, sans-serif;
+      padding: 50px;
+    }
+    img {
+      max-width: 300px;
+      height: auto;
+      transition: transform 0.3s ease;
+    }
+    p {
+      font-size: 18px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Hover Over the Image to Change It</h1>
+  <img id="mainImage" src="https://via.placeholder.com/300" alt="Placeholder Image">
+  <p id="mainText">This is the original text. Hover over the image to see it change!</p>
+
+  <script>
+    // Function to handle mouseover event
+    function onHover() {
+      document.getElementById('mainImage').src = 'https://via.placeholder.com/300/FF5733';
+      document.getElementById('mainText').textContent = 'This is the new text! The image has also changed.';
+    }
+
+    // Function to handle mouseout event
+    function onLeave() {
+      document.getElementById('mainImage').src = <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hover to Change Content</title>
+  <style>
+    body {
+      text-align: center;
+      font-family: Arial, sans-serif;
+      padding: 50px;
+    }
+    img {
+      max-width: 300px;
+      height: auto;
+      transition: transform 0.3s ease;
+    }
+    p {
+      font-size: 18px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Hover Over the Image to Change It</h1>
+  <img id="mainImage" src="C:\Users\NEBIN\Downloads\th.jpeg" alt="Placeholder Image">
+  <p id="mainText">This is the original text. Hover over the image to see it change!</p>
+
+  <script>
+    // Function to handle mouseover event
+    function onHover() {
+      document.getElementById('mainImage').src = 'C:\Users\NEBIN\Downloads\th.jpeg';
+      document.getElementById('mainText').textContent = 'This is the new text! The image has also changed.';
+    }
+
+    // Function to handle mouseout event
+    function onLeave() {
+      document.getElementById('mainImage').src = 'C:\Users\NEBIN\Downloads\th.jpeg';
+      document.getElementById('mainText').textContent = 'This is the original text. Hover over the image to see it change!';
+    }
+
+    // Add event listeners to the image
+    var image = document.getElementById('mainImage');
+    image.addEventListener('mouseover', onHover);
+    image.addEventListener('mouseout', onLeave);
+  </script>
+</body>
+</html>

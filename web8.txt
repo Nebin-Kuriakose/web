@@ -1,0 +1,23 @@
+8.Create a program using the JavaScript Event Listener to add multiple events on the same button.
+
+program:
+
+<html>
+<head>
+</head>
+<body>
+    <button id="myButton">Click Me!</button>
+
+    <script>
+        var button = document.getElementById('myButton');
+
+        button.addEventListener('click', function() {
+            alert('Event 1: Hello from the first event!');
+        });
+        button.addEventListener('click', function() {
+            button.textContent = 'Clicked!';
+        });
+    </script>
+</body>
+</html>
+
